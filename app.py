@@ -73,7 +73,7 @@ with gr.Blocks(title="YOLOv8 Person Detection") as demo:
     
     with gr.Tab("Webcam (Real-time)"):
         gr.Markdown("⚠️ Allow camera access when prompted")
-        webcam_input = gr.Image(source="webcam", streaming=True, label="Webcam Feed")
+        webcam_input = gr.Image(sources="webcam", streaming=True, label="Webcam Feed")
         webcam_output = gr.Image(label="Detection Result")
         webcam_text = gr.Textbox(label="Detection Count")
         
@@ -98,4 +98,4 @@ with gr.Blocks(title="YOLOv8 Person Detection") as demo:
     gr.Markdown("This demo uses YOLOv8n model to detect people in images and videos.")
 
 if __name__ == "__main__":
-    demo.launch(share=True)  # share=True creates a public link
+    demo.launch(share=True) 
