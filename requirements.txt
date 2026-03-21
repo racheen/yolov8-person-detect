@@ -6,3 +6,6 @@ ultralytics
 python-multipart
 python-dotenv
 websockets
+gradio>=4.0.0
+ultralytics
+opencv-python
