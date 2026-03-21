@@ -56,7 +56,7 @@ def detect_people_webcam(image):
 
 # Create Gradio interface with tabs
 with gr.Blocks(title="YOLOv8 Person Detection") as demo:
-    gr.Markdown("# 🧠 YOLOv8 Person Detection")
+    gr.Markdown("# YOLOv8 Person Detection")
     gr.Markdown("Upload an image, video, or use your webcam to detect people in real-time")
     
     with gr.Tab("Image Upload"):
@@ -94,7 +94,7 @@ with gr.Blocks(title="YOLOv8 Person Detection") as demo:
             outputs=video_output
         )
     
-    gr.Markdown("### 📝 About")
+    gr.Markdown("### About")
     gr.Markdown("This demo uses YOLOv8n model to detect people in images and videos.")
 
 if __name__ == "__main__":
